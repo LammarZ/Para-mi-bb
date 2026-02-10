@@ -110,3 +110,22 @@ function animar() {
 }
 
 animar();
+const inicio = new Date("2023-06-08T00:00:00");
+
+function actualizarTiempo() {
+  const ahora = new Date();
+  let diff = Math.floor((ahora - inicio) / 1000);
+
+  const dias = Math.floor(diff / 86400);
+  diff %= 86400;
+  const horas = Math.floor(diff / 3600);
+  diff %= 3600;
+  const minutos = Math.floor(diff / 60);
+  const segundos = diff % 60;
+
+  document.getElementById("tiempo").textContent =
+    `${dias} días ${horas} horas ${minutos} minutos ${segundos} segundos`;
+}
+
+setInterval(actualizarTiempo, 1000);
+actualizarTiempo();
