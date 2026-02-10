@@ -1,35 +1,18 @@
-html, body {
+body {
   margin: 0;
-  padding: 0;
-  background: #f6efe8;
   overflow: hidden;
+  background: #f6efe7;
   font-family: Arial, sans-serif;
+}
+
+#texto {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  color: #5a3b2e;
+  max-width: 320px;
 }
 
 canvas {
   display: block;
-}
-
-.mensaje {
-  position: absolute;
-  top: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  max-width: 500px;
-  text-align: center;
-
-  color: #5a3e36;
-  font-size: 1.4rem;
-  line-height: 1.6;
-}
-
-.contador-amor {
-  position: fixed;
-  bottom: 25px;
-  left: 50%;
-  transform: translateX(-50%);
-
-  font-size: 1.35rem;
-  color: #5a3e36;
-  font-weight: bold;
 }
