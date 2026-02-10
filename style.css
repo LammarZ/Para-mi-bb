@@ -1,18 +1,40 @@
 body {
   margin: 0;
   overflow: hidden;
-  background: #f6efe7;
   font-family: Arial, sans-serif;
-}
-
-#texto {
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
-  color: #5a3b2e;
-  max-width: 320px;
+  background: #f6efe7;
 }
 
 canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* TEXTO PRINCIPAL */
+.mensaje {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 320px;
+  z-index: 2;
+  color: #5a3e36;
+  font-size: 16px;
+}
+
+/* CONTADOR ABAJO */
+.contador-amor {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 2;
+  font-size: 14px;
+  color: #5a3e36;
+}
+
+.contador-amor strong {
   display: block;
+  font-size: 16px;
+  margin-top: 4px;
 }
